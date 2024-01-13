@@ -66,7 +66,7 @@ function zero_genpass()
 	
 	for (var i = 0; i < 46; i++)
 	{
-		if (((password[i >> 3] >> (i & 7)) & 1) == 1)
+		if (((password[i >> 3] >> (i & 7)) & 1) === 1)
 		{
 			checksum += 1 << (i & 7);
 		}
@@ -74,7 +74,7 @@ function zero_genpass()
 	
 	for (var i = 0; i < 8; i++)
 	{
-		if (((checksum >> i) & 1) == 1)
+		if (((checksum >> i) & 1) === 1)
 		{
 			password[(i + 46) >> 3] += (1 << ((i + 46) & 7));
 		}
@@ -82,7 +82,7 @@ function zero_genpass()
 	
 	for (var i = 0; i < 54; i++)
 	{
-		if (((password[i >> 3] >> (i & 7)) & 1) == 1)
+		if (((password[i >> 3] >> (i & 7)) & 1) === 1)
 		{
 			passwordshifted[bit_shift[i] >> 3] |= (1 << (bit_shift[i] & 7));
 		}

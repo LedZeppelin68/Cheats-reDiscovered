@@ -1,0 +1,20 @@
+﻿[
+   {
+      "@" : "Password.mp3",
+      "DURATION" : "57.5622676"
+   },
+   {
+      "@" : "Password.ogg",
+      "ALBUM" : "Boogerman: A Pick and Flick Adventure",
+      "ALBUM_E" : "Boogerman: A Pick and Flick Adventure",
+      "ARTIST" : "Matt Furniss",
+      "ARTIST_E" : "Matt Furniss",
+      "DATE" : "1994/08/06",
+      "RIPPER" : "2ch-N",
+      "SYSTEM" : "Sega Mega Drive / Genesis",
+      "SYSTEM_E" : "Sega Mega Drive / Genesis",
+      "SYSTEM_J" : "セガメガドライブ",
+      "TITLE" : "Password",
+      "TITLE_E" : "Password"
+   }
+]

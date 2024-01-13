@@ -1,0 +1,47 @@
+<html>
+<style>
+#anim1 {
+	width: 51px; height: 50px;
+	background-image: url('666.png');
+	animation: play1 1.3s steps(10) infinite;
+}
+#anim2 {
+	width: 57px; height: 43px;
+	background-image: url('666.png');
+	animation: play2 1.3s steps(12) infinite;
+}
+#anim3 {
+	width: 58px; height: 80px;
+	background-image: url('666.png');
+	animation: play3 1.3s steps(8) infinite;
+}
+#anim4 {
+	width: 75px; height: 66px;
+	background-image: url('666.png');
+	animation: play4 1.3s steps(8) infinite;
+}
+
+@keyframes play1 {
+	from { background-position: 0 0; }
+	to { background-position: -510px 0; }
+}
+@keyframes play2 {
+	from { background-position: 0 -50; }
+	to { background-position: -684px -50; }
+}
+@keyframes play3 {
+	from { background-position: 0 -93; }
+	to { background-position: -464px -93; }
+}
+@keyframes play4 {
+	from { background-position: 0 -173; }
+	to { background-position: -600px -173; }
+}
+</style>
+<body>
+	<div id="anim1"></div>
+	<div id="anim2"></div>
+	<div id="anim3"></div>
+	<div id="anim4"></div>
+</body>
+</html>

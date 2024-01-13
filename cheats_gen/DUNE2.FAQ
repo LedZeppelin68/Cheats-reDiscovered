@@ -1,0 +1,1069 @@
+         _/_/    _/    _/  _/      _/  _/_/_/_/     _/_/_/_/_/ _/_/_/_/_/
+       _/   _/  _/    _/  _/_/    _/  _/               _/         _/
+      _/   _/  _/    _/  _/  _/  _/  _/_/_/           _/         _/
+     _/   _/  _/    _/  _/    _/_/  _/               _/         _/
+    _/_/_/   _/_/_/_/  _/      _/  _/_/_/_/     _/_/_/_/_/ _/_/_/_/_/
+
+
+
+				  F A Q
+				  ^~^~^
+				    &
+				    ^	
+			S T R A T E G Y   G U I D E
+			^~^~^~^~^~^~^~^~~~^~^~^~^~^
+
+			      Revision 1.3
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+			    C O N T E N T S
+			    ^~^~^~^~^~^~^~^
+
+	(1)  Introduction.
+	(2)  FAQ.
+	(3)  Strategy
+	   (a)  Defence
+	   (b)  Offence
+	   (c)  General
+	   (d)  Specific Mission Strategy
+	(4)  House Strategy
+	   (a)  Atreides
+	   (b)  Ordos
+	   (c)  Harkonnen
+	(5)  Known Bugs (and solutions)
+	(6)  Manual Cheats
+	(7)  Related file locations
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+	(1)  INTRODUCTION :
+	*******************
+
+This document is being compiled due to the fairly large number of requests
+for the same information going through the comp.sys.ibm.pc.games.strategic.
+As an avid player of this game myself, it took me a while to work out
+various aspects of the game.  I have found that the manual, in general,
+doesn't explain a large proportion of the game, and obviously there are
+others whos experience is the same.
+
+This document is available by E-mail from : sepollit@teaching.cs.adelaide.edu
+or by FTP from : 
+		ftp.uwp.edu
+			pub/msdos/games/romulus/hints
+
+The file name format will be "dune2_??.lzh" where ?? is the version number.
+The file will be generically LHARC'ed with Unix LHA, so any version of
+MSDOS LHA should de-archive it.  Any problems, give us a yell.
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+All the information contained herein is collated from my personal
+experience, and those of others on the net.  I don't vouch for the
+correctness of any of it, but all error reports would be appreciated.
+
+Thanx to all who contributed, if I haven't thanked you already.  If anyone
+has any suggestions for the inclusion of any other information, please
+send E-mail to sepollit@teaching.cs.adelaide.edu
+
+All comments/corrections/suggestions for this document should be posted
+directly to me rather than to the net, where I might miss them.  Could
+people also refrain from posting this document in it's entirety to the
+net, as this could result in different versions floating around, as well
+as a great waste of bandwidth.
+
+Special thanx go to :
+
+Charles Cruden : for extensive info / hints / error correction!
+Morten Fimland : for the collection of 3 months postings to NN.
+Wolverine      : for a pre-posting copy of his new editor (See Section 7).
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+	(2)  FAQ :
+	**********
+
+~~~~
+Q1. When I try to create a vehicle I get the message "Unable to create more".
+~~~~
+A1. This is due to the fact that, using production facilities, you can't
+create more than 25 vehicles.  There are a few solutions to this one :
+  (i)   Cheat :-) {See Section (6)}
+  (ii)  Build a Starport.  This lets you many many more vehicles (until
+        they sell out!), but only of certain types.  E.g. you can't buy
+        your special house weapons from there etc.
+  (iii) Send your lower class vehicles (e.g. if you have tanks, get rid of
+        quads & trikes etc.) to map out the enemies structures, and in the
+        process, get destroyed.  Then use the freed up vehicle slots to
+        create stronger units.
+
+~~~~
+Q2. When I try to create a structure I get the message "Unable to create more".
+~~~~
+A2. This is due to the fact that there can only be a total of 75 structures
+on the whole map.  This message generally only occurs in the last mission, 
+as there will be three opposing forces all building against you. When you 
+get this message you can either :
+  (a) Destroy one of your old buildings, and create the new one.  This is
+not advised, as with the Death Hand opposing you, you will have enough
+touble keeping your structures standing.  It can, however, be good to
+destroy your rocket turrets and move them forward to let your defences "roll"
+forward as you expand.
+  (b) The better method is to send a series of vehicles to destroy a few
+outlying ememy structures.  Don't worry about defending the vehicles, just
+destroy one structure, and pull back.  As soon as the structure falls,
+start to build.  If you wait too long, the computer will rebuild and you
+will have lost your opportunity.  How big a building you can build
+afterwards depends on the size of the building you destroyed. E.g. If you
+destroyed one Rocket Turret, don't expect to be able to build a Palace.
+
+~~~~
+Q3. How do I stop the computer from rebuilding the rocket turrets that I
+just destroyed ?
+~~~~
+A3. First destroy enough space on the same rock section as the enemy to
+build a Construction Yard.  Then use that yard to place concrete up to
+the enemy turret, and use your vehicles to destroy the turret.  As soon as
+it is destroyed, build a turret of your own and place it in the exact same
+square as the enemy one was.  The computer never seems to have any
+origionality and build the turret elsewhere.  This is also useful as the
+turret immediately targets enemy units as they are produced.  The problem
+with this method is the fact that sometimes the Turret will change sides
+and become the computer's.  Beware of this :-(
+
+~~~~
+Q4. How do I give orders to my Carryalls and Ornithopters ?
+~~~~
+A4. You can't.  Ornithopters automatically attack the enemy base, and
+Carryalls do whatever is judged most appropriate by the computer (Pick up
+harvesters, pickup damaged vehicles etc.)  Carryalls can be influenced by
+putting damaged vehicles on Guard, instead of Move or Attack, as  Carryalls
+seem to give preference to Guarding vehicles.
+
+~~~~
+Q5. What can I get a Carryall to do ?
+~~~~
+A5. A Carryall can be used to transport Harvesters to and from the spice
+fields, and can be used to carry damaged vehicles to and from the repair
+facility. 
+
+~~~~
+Q6. Why does my Carryall not return the harvester to the field, after
+picking it up & dropping it in the refinery ?
+~~~~
+A6. The Carryalls must "learn" where the harvester was harvesting, and
+then it will be returned there after unloading harvested spice.  Two
+things will disrupt this : 
+	(a) If you have less Carryalls than harvesters, and two need to be
+taken back at once, one will be returned and the other will be deployed
+next to the Refinery.  You must send the deployed one back to the spice
+fields manually.
+	(b) If the place where it was harvesting has no spice left, it
+will be deployed next to the Refinery, and you must set it harvesting manually.
+
+~~~~
+Q7. How do I defend against Death Hand Missiles ?
+~~~~
+A7. Anyway, there are a few ways of getting around the problem of a
+destroyed base.
+  (i)  Cheat :-) - Save frequently (about every 2-3 minutes).  If your
+base gets hit, reload the game.  Make sure you save before the message
+"Missile Approaching!" comes up, as by this time the missiles target point
+has already been calculated.
+  (ii) The _REAL_ way - (a) Spread your base out.  That way, if a missile
+hits, it won't destroy two many buildings at once.
+			(b) Build / Buy a MCV to replace your Construction 
+Yard if it gets destroyed.
+			(c) If you don't let Harkonnen units get within
+sight of your base, the missiles' hit chance is much lower.  To achieve this, 
+build rocket turrets well away from your base, in the direction of the 
+Harkonnen, and defend them with Tanks.
+			(d) Build another Construction Yard as far away as
+possible from your first one.  That way, if the main one gets destroyed,
+the missiles will start to be targeted on the newly built one, and this
+will get you some breathing room to rebuild.
+			(e) Send a large contingent of vehicles to take
+out the palace as quickly as possible.
+			(f) Build a palace as far away from your main base
+as possible.  This will then become the target for Death Hand Missiles.
+
+~~~~
+Q8. What use is the IX ?
+~~~~
+A8. The IX is only useful when you have built a Heavy Vehicle Factory.  It
+allows you to build the House weapons (Devestator, Sonic Tank, Deviator.)
+It also allows you to build Ornithopters in the High Tech Factory
+(Atreidedes or Ordos only)
+
+~~~~
+Q9. How can I defend against Ornithopters ?
+~~~~
+A9. Build Rocket Turrets as soon as you can.  Firstly because they provide
+an excellent defence against enemy vehicles, and secondly because they are
+the only unit with any chance of destryoing an Ornithopter.  Don't worry
+if it seems to take a long time to destroy the Ornithopter - remember it
+is moving very fast and so it takes quite a few shots to get a hit.  All
+it takes is one hit to destroy it however, so be patient and repair whatever
+it is attacking.  Also don't worry if some of your missiles miss, and hit 
+your own buildings - just repair the damage quickly.  Before you can build
+Rocket Turrets, you must build a Radar Outpost and upgrade your
+Construction Yard twice.
+
+~~~~
+Q10. Is it worth trying to steal spice ?
+~~~~
+A10. In general, it is fairly pointless.  Once the Silo is damaged "into
+the red" so that you can send a set of soldiers in to capture it, it will
+generally be attacked immediately by the surrounding enemies, and
+destroyed in a short space of time.
+
+~~~~
+Q11. How many Refineries should I generally create ?
+~~~~
+A11. Don't over do it.  In most games it is best to build 1 (maybe 2)
+refineries, buy an extra harvester or two, and build Silos instead.
+There are a few good reasons for this : they take up less space, they
+cost less, they hold only 100 units less of spice, and they use less power.
+
+~~~~
+Q12. How many Heavy Vehicle Factories should I build ?
+~~~~
+A12. Generally, one is enough, but occasionally 2 may be useful.  The
+thing to remember is that you can only _CREATE_ 25 units, so once that
+limit is reached, you must buy units from the Spaceport.  This means if
+you want a large number of vehicles in a hurry at the start, then two HVFs 
+are good, but in the long term your money and building space is better
+used for other things.
+
+~~~~
+Q13. How can I get repaired units to be transported back to where they
+were picked up from ?
+~~~~
+A13. Build your repair centre in a position that ensures that buildings can
+be placed all around it.  i.e.
+
+     ...........
+     ...OOOOO...  O = other building 
+     ...ORRRO...  R = Repair Centre
+     ...ORRRO...  . = any other stuff
+     ...OOOOO...
+     ...........
+
+(The "O" positions can also be taken up by vehicles, but this is pretty
+pointles, as a wall is cheaper even than a trike)
+
+This means that the only way a vehicle can get to the Repair Centre is
+using a Carryall, so make sure you have some already made.
+When the Repair Centre is completely surrounded, and a damaged vehicle is
+brought in, it is repaired, and then, instead of just being deployed next
+to the Centre, a Carryall comes and takes it back to the spot where it was
+origionally picked up from.
+A thing to be aware of is that if you only have one Carryall, and it gets
+destroyed or is doing something else when you have a vehicle ready to be
+returned to the field, the vehicle will eventually smash it's way out of
+the Repair Centre, destroying a building if necessary.
+
+~~~~
+Q14. Is the amount of spice on each mission limited ?
+~~~~
+A14. Yes.  Once it is gone, it can't be replaced.  The only thing you can
+do then is to steal it from the enemy, which is pretty hard.  This is a
+great incentive not to go overboard building unnecessary buildings (e.g. 5
+Heavy Factories !)
+
+~~~~
+Q15. What buildings are worth trying to steal ?
+~~~~
+A15. Heavy Vehicle Factories : produce House Weapons (Sonic Tank, Devestator,
+Deviator).
+     Construction Yards : produce Rocket Turrets in the middle of enemy
+buildings to take out vehicles without losing your own vehicles.
+     Windtraps : easier than building your own.
+
+The negative points of capturing buildings are :
+     (a) The soldiers take forever to get there.
+     (b) The soldiers often get killed before getting to the building.
+     (c) It's very hard to keep a building in the red without destroying it.
+
+~~~~
+Q16. How do you bypass the opening intro ?
+~~~~
+A16. After you have watched it once, a file called "ONETIME.CFG" is
+created in the directory, with 0 bytes in it.  After this the intro may be
+skipped by pressing the space bar.
+
+~~~~
+Q17. How do I aim the Death Hand Missile correctly ?
+~~~~
+A17. Either SAVE/RELOAD until you get a correct hit, or put up with the
+inaccuracy.  If it always hit where you aimed it, Harkonnen would have no
+trouble winning every time on level 8 & 9!
+
+~~~~
+Q18. Which has a longer range, Sonic Tanks or Missile Launchers ?
+~~~~
+A18. With the bug relating Sonic Tank range to Game speed:
+  at Slow/Slowest - Sonic Tanks have a much shorter range
+  at Normal  - About equal range.  Effectiveness depends on the target
+               size - Launchers are better against larger targets, Sonic
+               Tanks are better against smaller ones (e.g. Rocket Turrets!)
+  at Fast/Fastest - Sonic Tanks have a greater range and quickly dispose
+                    of Rocket Turrets without themselves suffering damage.
+		    They are obviously most effective at this speed
+~~~~
+Q19. What new technologies do I get on each mission ?
+~~~~
+A19. This varies between the houses, but a basic list is :
+	Level 1, 2, 3 - Light Factory, Barracks
+	Level 4 - Heavy Vehicle Factory, WOR
+	Level 5 - Gun Turrets, Rocket Tanks (not Ordos)
+	Level 6 - Rocket Turrets, Starport, High Tech, Siege Tanks 
+	Level 7 - House of IX
+	Level 8 - Palace
+	Level 9 - <nothing new>
+
+~~~~
+Q20. When can the Ordos get Missile Launchers ?
+~~~~
+A20. The Ordos can never build Missile Launchers, but they may buy them
+from the Starport, when available.  If they capture an enemy Heavy Vehicle
+Factory, they will be able to use that to produce them also.
+
+~~~~
+Q21. How can I capture a building ?
+~~~~
+A21. Damage the building until it is in the "red" damage sector, then move
+an infantry unit in to take it over.  If the damage is not in the red,
+then the unit is destroyed, and the building is damaged.
+
+~~~~
+Q22. Why can't I build Ground Vehicles, but I can build Carryalls ?
+~~~~
+A22. This is due to the fact that there is a separate count for the total
+number of Carryalls & Ornithopters owned by everyone, just like the building
+quota.  If the computer has too many, shoot them down as they are picking up 
+a damaged vehicle. 
+
+~~~~
+Q23. How do I tell a Harvester which Refinery to return to ?
+~~~~
+A23. Harvesters generally return to the last Refinery they unloaded at.  If 
+you want it to go to a different one, you have to instruct it to Move there, 
+and after that it should return to that one, if possible.
+
+~~~~
+Q24. How is the score calculated ?
+~~~~
+A24. The score doesn't depend on time at all, despite what it looks like.
+The only things that factor in to it are amount of spice harvested, number
+of enemy units destroyed and number of enemy buildings destroyed.
+Buildings that are taken over don't count as buildings destroyed.  To
+maximise your score, take time at the end, before destroying the last
+building, to harvest all available spice.  Even better, let the last
+building left be a Refinery, and harvest spice while destroying the
+continual supply of Harvesters the computer will get.
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+        (3)(a)  STRATEGY - DEFENCE :
+        ****************************
+
+
+~~~~
+T1. Use your harvesters to run over approaching enemy troops before you
+get hit by them.
+
+~~~~
+T2. Once you can get tanks, use them to run over troops; it is much
+quicker than shooting them.
+
+~~~~
+T3. As soon as you start a new level, use the vehicles that you are given to
+explore in all directions to find :
+        (a) Spice, and those little "bumps" in the sand that often have
+spice under them.
+        (b) The approximate location of the enemies base.
+Once you have done this, RESTART THE LEVEL, and start building!
+
+~~~~
+T4. Don't explore too far until you have built a good defence up.  The
+computer at the start works on a strategy of "If you can't see him, he
+can't see you!"
+
+~~~~
+T5. As soon as you can build Rocket Turrets, build about 3 and put them
+in a line, facing in the direction of his base, about 3 squares apart.
+Make sure that you have "explored" at least 2 squares greater than the radius
+of the Turret.  This allows the turret to get a lock on
+approaching vehicles/soldiers, and attack them before they can hit the
+base.
+
+~~~~
+T6. Build about 5-7 of your heaviest direct combat vehicle (i.e. Tank),
+and set them up in a flat U, with Missile Launchers (if you have them) on
+the sides i.e.
+
+                     LX                       XL
+
+                             X    X    X
+
+{L : Launcher; X : Tank}
+The most important point is that the left and right "horns" should be far
+enough away from the centre to not be attacked.
+
+Then, when the enemy vehicles (Y) arrive :
+
+                                Y
+
+                             Y
+                     LX             Y          XL
+
+                             X    X    X
+
+Wait for the enemy to get past the "horns" and start being attacked by the
+front tanks.  Then move the horns inward to attack from the side/rear,
+using the launchers from a distance.
+
+Above all, do not let your front line break.  keep a few vehicles as
+backups, and move them up if part of the line is taking a beating.
+
+~~~~
+T7. Defend Missile Launchers well, as they are devastating from a distance, 
+but easily destroyed from close up.
+
+~~~~
+T8. Make sure you leave a few units at the rear of your buildings, to
+defend against the enemy units that will be dropped by Carryalls.
+
+
+
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+        (3)(b)  STRATEGY - OFFENCE :
+        ****************************
+
+~~~~
+T1. Destroy his harvester when it gets too far from his base.  It will
+explode, releasing however much spice it had harvested.  Make sure you
+destroy it while it is on sand, as if it is destroyed over rock then the spice 
+is lost.
+
+~~~~
+T2. Don't use soldiers or troopers to attack harvesters - the harvester
+turns and runs over the attackers.  The only time you should do this is if
+the Foot unit is standing on a mountain range - the only units that can go
+over mountains are the foot units.  They still can be attacked while on the
+mountain, just not run over.
+
+~~~~
+T3. Concentrate your attack on one structure at a time.  If the computer is
+pumping money into repairing while you are attacking, you won't be able to
+keep pace unless you have a concentrated attack.
+
+~~~~
+T4. When attacking buildings, use the Missile Launchers to attack the Rocket
+Turrets first (moving the tanks behind the launchers to defend them from
+vehicle attacks).  Remember that the radius of detection of a launcher is one
+greater than that of a turret.  That is :
+
+
+        X       T       X
+        X               X <- radius of the turret (T)
+        X               X
+         X             X
+          X           X
+           XXX     XXX
+              XX XX     
+               LXL   <- best position for the launcher (you don't get hit!)
+
+After the turrets are down, use the tanks to destroy the buildings.
+Remember that, if you are using the patched version, the computer will
+rebuild his Turrets (in the same place), so don't hang around - move in
+and destroy quickly.  It is often useful to leave a couple of strong
+vehicles in the squares directly around the turret, so if it is rebuilt,
+they will immediately attack it again while the turret can't use it's
+missiles due to their closeness.  Hence the turret can only fire back with
+normal guns which do much less damage.
+
+~~~~
+T5. Before attacking the enemy in force, use some kamikaze units to scout
+the base and locate the Construction Yard.
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+        (3)(c)  STRATEGY - GENERAL :
+        ****************************
+
+~~~~
+T1. Create a Repair facility as soon as you can.  It is a lot cheaper and
+faster to repair, rather than build.
+
+~~~~
+T2. Build one Carryall for each harvester you have, as well as 1-3 to use
+for transporting damaged units.
+
+~~~~
+T3. Don't bother building 4 Refineries.  It is much more efficient to
+build about two, along with an extra harvester (total of 3), and to use
+Carryalls for transportation.
+
+~~~~
+T4. Build a Starport early on, as that is the only way you can get more
+than 25 vehicles.  Watch the prices carefully, as there is a lot of
+fluctuation.  It is often better not to build a High-Tech factory, as 
+Carryalls can be bought from there, often for cheaper than the 800 they
+cost to make (plus the 800 for the Factory).  The cheapest prices I have
+seen are :
+        Rocket launchers: 180
+        Siege tanks: 240
+        Combat tanks: 150
+        Harvesters: 150
+        MCVs: 360
+        Carryalls: 320
+
+
+~~~~
+T5. After Level 4, build two refineries and a few Silos to increase your
+cash for the more expensive units.
+
+~~~~
+T6. Sand Worms remain dormant until a unit (yours or the computers) comes
+within a couple of squares of it, or it is fired on.  If all the vehicles
+on the map (computer's & your's) are over rock, then the Sand Worm will
+just stay still until it is reduced to half damage, or until a vehicle
+goes on to the sand.
+
+~~~~
+T7. Sand Worms will disappear when they have been reduced to half damage,
+or have eaten 3 units.  If you are in a hurry to get rid of one, send a
+Trike towards it, and lead it towards the enemy base.  When you are just
+about to be fired on, let the enemy vehicles get drawn onto the sand, then let
+the Sand Worm eat the Trike and then watch it eat the fleeing enemy :-).
+
+~~~~
+T8. Deviated units that are sent to attack another house's units (other
+than their own) will continue to do so, even after their allegiance has
+reverted.
+
+~~~~
+T9. When you choose the region to attack in Mission 8, remember that the
+house controlling the region will have a palace, where as the other house
+doesn't.  Hence attack, in order of preference : Ordos, Atreides, Harkonnen.
+
+~~~~
+T10. Deviated Harvesters set to return should continue to return, even after
+they have reverted.  This lets you get a nice amount of spice from the
+remains after it has run into your Rocket Turrets!  Some people have said
+this doesn't work (on the IBM), but it seems to work for me.
+
+~~~~
+T11. You can't order more than 10 of any one vehicle, at one time, from the
+Spaceport.  The Spaceport does replenish 'Sold Out' stock over time though.
+
+~~~~
+T12. Damaged building produce slower than undamaged ones.  There is not
+much difference while in the green, but below that the production rate is
+noticeably lower. Rocket Turrets also fire less often when damaged.
+
+~~~~
+T13. Damaged units fire less frequently.  If a unit is down to below
+green, they fire at half the rate.
+
+~~~~
+T14. Palaces don't cost anything to repair, so keep them in top condition
+all the time.
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+        (3)(d)  STRATEGY - Specific Mission Strategy:
+        *********************************************
+
+~~~~
+Level 3.
+~~~~
+
+After building a windtrap and refinery, build a radar outpost as soon as
+you have the cash - this will help you keep track of what vehicles are around.
+Once you have these basic buildings, build more Windtraps and a Light Factory.
+Then build your heaviest units and place them at the front of your base,
+facing in the direction of the enemy, to defend the buildings.  
+It is now time to build another Refinery to build up some credits.  Make
+sure 
+you leave a couple of units at the rear/sides of your base to defend
+against units brought in by the computer's Carryalls.
+
+After you have set up this defence, build as many offensive units as
+possible, until the "Unable to create" message comes up.  Then send a
+series of raiding groups of 3-4 units out to scout the enemy base, and
+locate the Construction Yard.  Don't worry if these units are destroyed -
+just build some more as quickly as possible.
+
+Once you have found the main enemy buildings, try doing a flank attack with 
+a large group of units to destroy the Construction Yard first, as this
+will stop the enemy from creating more structures as you destroy them.
+Once the Construction Yard is destroyed, go for the offensive buildings
+i.e. Light Vehicle Factory, WOR, Barracks.
+If you start losing vehicles, call off the building attack and use the
+remaining vehicles to take out as many enemy vehicles as possible before
+they die.  Then re-build your forces as quickly as possible, as the
+computer will often counter attack when you have just retreated - don't
+leave your base undefended.
+
+~~~~
+Level 7.
+~~~~
+At the start of this level, no matter what house you are, you must build a 
+couple of Rocket Turrets as soon as possible.  On this level, the computer 
+will always send a series of Ornithopters against you, and unless you have 
+the Turrets, your buildings will soon be destroyed.
+
+~~~~
+Level 9.  Charles Cruden's Level 9 Establishing plan (Thanx Charles!)
+~~~~
+        In case you haven't noticed, the layout for this level never changes.
+Only the colour of the various bases do.  You will be facing two death hand
+missiles (unless you are the Harkonnen) and an attack wave which lasts
+around 15 to 20 minutes.  Once you've overcome these obstacles, it's a matter
+of destroying the enemy bases, much as before.
+        Overcoming the DHM is mostly luck.  Either you get hit or you don't.
+It is possible (not even especially difficult) to get through this battle 
+_WITHOUT_ using the 'save/restore' game cheat.  It mostly depends on 
+whether or not the first two missiles hit you construction yard or not.  Most
+of the time, they won't.  To ensure you don't need to worry about them again,
+you need to build a starport.  Basically, this is what I have found is the
+best method.
+        Start exploring, to find the spice reserves.  There are lots of them
+around, so you won't run out of money if you harvest quickly.  You start out
+with 1000 credits (or 1500 if you're the Ordos).  This is just enough money
+to build concrete over to the left, as far as you can go (in a straight line),
+then a power centre and a spice facility.  When your harverster returns, keep
+building to the left and build a spice facility and a radar station.  When
+these harvesters return, build more windtraps, and build your starport.  By
+this time, the enemy should have found your base.  Note that the DHMs will
+not be launched until units from the respective houses (Sardaukar and
+Harkonnen) have actually found your base.  By this time though, you should
+have enough money to buy an MCV.  If your yard gets hit, deploy it (on another
+rock usually... they won't always find it the second time) and rebuild, if it
+doesn't, move it to the rock to the right of your base and wait.  You now have
+a construction yard in reserve.
+        The DHMs will mostly fire at the construction yard.  So long as you
+build buildings a reasonable distance away, they won't get hit.  This is one
+obstacle down.  The other obstacle is an attack wave from all three opposing
+houses that lasts about 15 to 20 minutes.  The best defense here is six or
+seven rocket turrets on the rock just above your construction yard (they tend
+to get hit by DHMs, but are easy to rebuild), and two or three on the northern
+most part of the rock you're on (towards the top left).  This will defend 
+against all three houses.
+
+~~~~
+Level 9.  Charles Cruden's Level 9 Winning plan (Thanx Charles!)
+~~~~
+Your first target should be the house on the far right.  Despite what you 
+think, once you are well established, and have two or three harvesters out and
+about, DHMs are not that serious.  Thus, getting the palaces that make them 
+isn't that important.
+The house on the far right (generally the Atreides, in one game, the Ordos) 
+has only one construction yard, and a poorly defended one.  This is how you
+can make good your attacks.  Approach from the bottom of the screen straight
+up.  You should be about 7 or 8 squares from the right edge of the screen.
+If your aim is good, you will find a rocket turret out from the base, and
+behind it either a refinery or a light vehicle factory.  Destroy this turret
+and advance quicly to destroy the structure behind it.  Behind that is the
+construction yard for this house.  Be careful... you can usually expect to
+be attacked by a number of siege tanks and rocket launchers, both from this
+house and from the emperor's.  Once the construction yard here has been 
+destroyed, you can take apart the rest of the base at your leisure, but it 
+should be destroyed as much as possible before moving on to the next.
+Your next target will always be the emperor's base.  He has two construction
+yards, one far in the top right hand corner of the screen (which can be
+quickly destroyed after taking out the first base), and another heavily guarded
+behind his palace.  Use one or two rocket launchers defended by siege tanks
+to advance through his base via the top, making sure to take out any offending
+rocket turrets below with other rocket launchers.  The units below should be
+larger in number as they will be facing the brunt of the emperor's forces.
+Try to advance as quickly as possible: the computer rebuilds buildings roughly
+in the order in which they were destroyed, though it rarely rebuilds a
+construction yard if it has another.  Don't let it have the time to rebuild 
+enough to build the other construction yard.  Eventually, your units on the
+top will reach the edge of the emperor's palace.  Just above it will be the
+second construction yard.  Be careful though... the construction yard is
+close enough to the palace to be well within range of the excellent defense
+the emperor's palace has. (Six rocket turrets, 3 launchers and a lot of
+concrete wall can really ruin your day.)  The palace is easy enough to destroy
+before or after taking out the construction yard.  Let the first target be
+based on how badly DHMs are taking out your base.
+Once the emperor's palace is done, only the base on the left remains.  
+(Ususally the Harkonen, occasionally the Ordos.)  This base, like the 
+emperor's, has two construction yards, but here they are placed close together.
+To get to them, you must go through most of the base, but given enough 
+rocket launchers, this is not a big problem.  Advance as before, taking out
+the rocket turrets first, then the palace and heavy vehicle factory you will
+find just behind the first turret you meet.  (Attack from the right.)  It
+should not be hard then to destroy the rest of his base from the top inwards.
+Move right and you will find two construction yards next to each other behind
+a few windtraps.  Take these out and the game is basically over.  The only
+thing you should watch for is in sending more troops for support - this base
+has a number of small 'arms' which jut out from it and have four rocket 
+turrets for fingers.  Nasty things for unsuspecting vehicles to wander by
+on their way to the slaughter at the top of the screen.
+
+
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+        (4)(a)  HOUSE STRATEGY - ATREIDES :
+        ***********************************
+
+~~~~
+Q1. How are the Fremen best used ?
+~~~~
+A1. Build as many palaces as you can afford, generate Fremen as often as
+possible, and overwhelm the enemy with sheer numbers of them.  They are
+very useful for mapping out the enemy base, but as you can't control their
+movement, it makes the mapping somewhat erratic.  In the unpatched
+version, Rocket Turrets don't fire on them, only vehicles that are being
+attacked.  In the patched version they are fired upon
+
+~~~~
+Q2. How are Sonic Tanks best used ?
+~~~~
+A2. They are most effective against foot units, which they can destroy in two
+hits.  They are also very useful against Rocket Turrets, provided you put
+the Game Speed to Fast/Fastest, as this is a bug which increases their range.
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+        (4)(b)  HOUSE STRATEGY - ORDOS :
+        ********************************
+
+~~~~
+Q1. How are the Deviators best used ?
+~~~~
+A1. The Deviator is the best weapon you can use for indirect offensive
+purposes, and  the best time is close to the opposing forces' buildings.  Aim 
+the Deviator at the strongest vehicle you can find, and get it to attack it's
+own structures.  The defences of the enemy won't recognize that it is an
+enemy, and let it destroy the structure.  Once it has destroyed a
+structure, it's allegiance will revert, but it can easily be re-Deviated!
+The problem comes if you use it to attack vehicles, as they will return fire, 
+and the vehicle will revert to it's origional allegiance.  They are also very
+effective against defending Devestators - deviate them and destruct them!
+If you have deviated unit selected when it reverts, you will be able to
+give it one last order (with it's allegiance set to the enemy).  This
+allows it to attack it's own buildings without being attacked.  Beware of the 
+fact that Deviators have a significantly shorter range than Missile Launchers.
+
+~~~~
+Q2. How are the Raider Trikes best used ?
+~~~~
+A2. The most important thing is to keep them moving.  Due to their speed,
+they can outrun anything, and a missile launcher is pretty useless against
+them if you get up close.  They should be used to map out the enemy base,
+as their speed should keep them out of most trouble.  As an offensive
+weapon they aren't much good unless you are continually moving them.
+
+~~~~
+Q3. Are the Saboteurs any good ?
+~~~~
+A3. The simple answer is no, as they are highly unlikely to break through
+a solid defence.  In general, save your money, don't build a palace, and
+buy other units instead.  If you do want to use them, it is best to send
+them both (you get two at a time) against the same target, generally a turret.
+The first one will hopefully destroy the turret and the second one should
+destroy the building behind it.  Even better, try to get them to destroy
+the opposing palaces.  Be sure that you always leave a direct path from
+the palace to the target - they will destruct on the first building they
+come to, yours or the enemy's.
+
+~~~~
+T1. More than any other house, it is of paramount importance for the Ordos
+to build a Starport and to buy Missile Launchers.
+
+~~~~
+T2. Early in the game, when the other houses have Siege tanks and you
+don't, you must split up attacking Siege tanks, and attack them with 3-4
+combat tanks each.
+
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+        (4)(c)  HOUSE STRATEGY - HARKONNEN :
+        ************************************
+
+~~~~
+Q1. How are Devestators best used ?
+~~~~
+A1.  A group of them is a formidable offensive / defensive force, but make
+sure you have a Repair Centre surrounded with walls, as well as a couple
+of Carryalls.  This way, they can attack, do what damage they can, get
+repaired, and start attacking again.  If one is about to be destroyed, it
+is better to destruct it than to let it explode as it does more damage on
+Self-Destruct.
+
+~~~~
+Q2. How are Death Hand missiles best used ?
+~~~~
+A2. Launch them and target them in a group of buildings - if you're lucky
+they might hit the target!  What you aim for and what you hit are
+generally two very different things, but their power is undeniable!
+
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+        (5) KNOWN BUGS (AND SOLUTIONS) :
+        ********************************
+
+~~~~
+B1. The Starport bug : Starport gets stuck... no units arrive. 
+		       Displays 'Frigate arrival in t-0 seconds
+~~~~
+S1. Get the upgrade patch to v1.07 {See section (7)}
+	OR
+    Build another starport.  This solution only works some of the time,
+and even then the second starport may freeze.  Generally, any units on
+order from the 1st starport will be delivered to the new one.
+
+I strongly advise getting the upgrade patch, as many things are fixed, and
+the game is quite a bit harder.
+
+~~~~
+B2. The computer has unlimited money.  You can destroy all Refineries and
+Silos, but the computer can always rebuild them.
+~~~~
+S2. This is still to be fixed.
+
+~~~~
+B3. At the start of a scenario, there will be a set of units guarding each
+ememy construction centre.  When they are destroyed, they aren't replaced.
+~~~~
+S3. Exploit this to the fullest :-)  Take these units out early, then
+attack the construction centre.
+
+~~~~
+B4. The computer attacks only on one front, and doesn't look for
+weaknesses in your defensive belt.
+~~~~
+S4. Exploit this to the fullest :-)  Don't bother building defensive
+structures on the other fronts as it is just a waste of money and space.
+
+~~~~
+B5. You should be able to buy Ornithopters from the Starport.
+~~~~
+S5. Look in the file SCENARIO.PAK and you will find the word "Thopters" in
+the [CHAOM] definition blocks.  This is a typo, and as such is a _VERY_ bad 
+error to have left in.  All you should do is change the word to "'Thopters" 
+i.e. add a single quote, and you can buy them from the Starport  like you 
+should be able to.  You will have to restart the current mission for it to
+take effect.
+
+~~~~
+B6. Depending on how fast the game is running (i.e. the "SPEED" setting in
+the Game Controls menu), sonics tanks have a different range.
+~~~~
+S6. If you are Atreides, use this by putting up the speed to "Fast" and
+setting the Sonic tanks against the enemy structures.  If you aren't
+Atreides, as soon as you see a Sonic tank put the speed to slow, and use
+Missile Lanuchers to take them out.
+
+~~~~
+B7. Rocket Turrets start to blink, and won't fire on anything.
+~~~~
+S7. The Turrets just blink like they do when first created, before they
+start to attack.  The solution seems to be to either reload the game, or
+quit and restart the game.  This only occurs in the upgraded version and
+is very rare.
+
+~~~~
+B8. (REPORTED) The Deviator Tank can't deviate the Emperor's forces.
+~~~~
+S8. This may be deliberate (The Emperors forces are impervious to Nerve Gas),
+but it is more likely a bug.  It may have been fixed in the upgrade.
+		***** THIS BUG DOESN'T EXIST *****
+
+~~~~
+B9. (REPORTED) A square that contained a building that was destroyed by a
+Sabateur can't be rebuilt on for quite some time.
+~~~~
+S9. I'm not sure if this is a bug, or if it is what's supposed to happen.
+If it is correct, this make the Sabateur much more useful, provided you
+knock out the rocket turrets before you send in the Sabateurs.
+
+~~~~
+B10. A harvester, when full and showing the "Awaiting pickup" message,
+will sometimes take a very long time before it is picked up.
+~~~~
+S10. The answer isn't, as might be expected, to build more Carryalls.  The
+problem here is that your system is too close to the minimum required
+memory.  Try exiting and running from a boot disk with no TSRs loaded.
+
+~~~~
+B11. Fremen will sometimes get "stuck" off screen, but will still be able
+to attack your base, and you can't target them.
+~~~~
+S11. The solution is to fire at the ground as close to the Fremen as you
+can get.  After a while, they will move forward and attack the vehicle
+instead, which will bring them onto the screen for you to attack.
+
+~~~~
+B12. The "group movement" doesn't work as it says in the manual.
+~~~~
+S12. In the manual it says that to get one unit to follow another, click
+on the second one and tell it to move to where the "leader" is.  Then when
+you move the leader, any followers will move with it, unless given other
+instructions.  This doesn't happen like this at all.  The way it is
+supposedly done is to click on the "Leader" and command him to move. After
+it starts moving, click on the "Follower" and command him to move, with
+the "Leader" as the destination.
+
+~~~~
+B13. Rocket Turrets don't fire on Fremen.
+~~~~
+S12. Get the upgrade patch to v1.07 {See section (7)}
+
+~~~~
+B14. Various buildings start to flash.  Turrets & Refineries don't work.
+~~~~
+S14. See Bug 7 - This is a simmilar bug, and the solution is the same.
+i.e. saving and reloading should correct the problem.
+
+~~~~
+B15. When the computer rebuilds buildings, they can be placed over your
+units, destroying them.
+~~~~
+S15. This only occurs in the upgraded version, and can't be fixed.  The
+simple solution is don't leave vehicles in a destroyed building's old space
+if at all possible.
+
+~~~~
+B16. Spice Refineries hold 1100 spice unit, not 1000
+~~~~
+S16. There is no solution for this. Besides, I can't imagine anyone
+complaining :-)
+
+~~~~
+B17. The maximum amount of spice allowed to be stored is 32000 credits.
+After this spending is reversed (Harvesters decrease money, building increases 
+money)
+~~~~
+S17. Spend some of that stockpiled cash :-) You don't need that much anyway!
+
+~~~~
+B18. The computer can build buildings unconnected to it's base.
+~~~~
+S18. Don't begrude the poor stupid computer it's small advantage - it
+needs to cheat any way it can to win!  Besides it's the computer, and is
+running the game, so it can do whatever it pleases :-)  There is no
+solution to this problem
+
+~~~~
+B19. If there is a lot happening on the screen (by way of sounds), you can
+hear the "Missile Warning" after the missile is hit.
+~~~~
+S19. This has not been fixed.
+
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+        (6) MANUAL CHEATS :
+        *******************
+~~~~
+O1. I want more than 25 units!
+~~~~
+C1. Use a hex editor to edit the SCENARIO.PAK file, find a line containing :
+           "Brain=Human, Maxunit=25, Credit=1500".
+Edit the number after the Maxunit to 99.
+
+
+/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\-/-\
+
+
+        (7) RELATED FILE LOCATIONS :
+        ****************************
+
+~~~~
+F1. Dune 2 Upgrade Patch to v1.07
+~~~~
+D1. This patch fixes many errors and makes the game a little harder by
+allowing the computer to rebuild structures.
+~~~~
+L1. Location : ftp.uwp.edu
+	       /pub/msdos/games/uml/Patches
+
+	     : wuarchive.wustl.edu
+	       /pub/msdos_uploads/games/upgrades
+~~~~
+N1. Name : dune2.zip
+
+
+~~~~
+F2. Wolverine's Dune 2 Save/Scenario Editor
+~~~~
+D2. This editor is wild!  If you want to cheat, or just to re-design the
+scenarios, this is the thing for you.  You can modify existing buildings,
+units and the map, as well as creating new units.  Special units can also
+be bought from the Starport, as well as large amounts of money and instant
+building in the Construction Yard.
+~~~~
+A2. Author : wolvy@netcom.com
+~~~~
+L2. Location : wuarchive.wustl.edu 
+	       /pub/msdos_uploads/...(some sub-directory)
+~~~~
+N2. Name : Dune2ed2.zip
+
+
+~~~~
+F3. Dune 2 Unprotect - Origional and patched versions
+~~~~
+D3. This is a text file containing the instruction for removing the
+look-up-in-the-manual protection.  It requires a hex editor, and a small
+amount of knowledge about hex editing.
+~~~~
+A3. Author : ?????
+~~~~
+L3. Location : ftp.uwp.edu
+	       /pub/msdos/games/romulus/cracks
+~~~~
+N3. Name : dune2.unp
+
+
+~~~~
+F4. Dune 2 Trainer
+~~~~
+D4. This is a TSR that will give you unlimited money, army protection, and
+army knockout
+~~~~
+A4. Author : Rescue Raider
+~~~~
+L4. Location : wuarchive.wustl.edu
+	       /pub/msdos_uploads/game_solutions
+~~~~
+N4. Name : dune2trn.zip
+
+
+
+

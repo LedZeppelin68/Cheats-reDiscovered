@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+.password {
+	font-family: monospace;
+}
+.password table, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.password td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.password th {
+	background: #5c5c5c;
+	color: white;
+}
+.password tr:nth-child(2n+2) {
+	background: #eeeeee;
+}
+.password tr:nth-child(2n+3) {
+	background: #e6e6e6;
+}
+.offset {
+	color: blue;
+}
+.ascii {
+	font-weight: bold;
+}
+.main {
+	font-weight: bolder;
+	font-size: 24;
+	font-family: monospace;
+}
+.title {
+	font-size: 18;
+	font-weight: bold;
+	font-family: monospace;
+}
+</style>
+</head>
+<body>
+<div class="main" >Exo Squad</div>
+<p>
+<div class="title" >Level Passwords:</div>
+<p>
+<div class="password" >
+<table>
+<tr><th>HARKONNEN</th><th>ATREIDES</th><th>ORDOS</th><th>effect</th></tr>
+<tr><td>DEMOLITION</td><td>DIPLOMATIC</td><td>DOMINATION</td><td>LEVEL 2</td></tr>
+<tr><td>SPICESATYR</td><td>SPICEDANCE</td><td>SPICESABRE</td><td>LEVEL 3</td></tr>
+<tr><td>BURNINGSUN</td><td>ETERNALSUN</td><td>ARRAKISSUN</td><td>LEVEL 4</td></tr>
+<tr><td>DARKHUNTER</td><td>DEFTHUNTER</td><td>COLDHUNTER</td><td>LEVEL 5</td></tr>
+<tr><td>EVILMENTAT</td><td>FAIRMENTAT</td><td>WILYMENTAT</td><td>LEVEL 6</td></tr>
+<tr><td>ITSJOEBWAN</td><td>ASHLIKENNY</td><td>SLYMELANIE</td><td>LEVEL 7</td></tr>
+<tr><td>DEVASTATOR</td><td>SONICBLAST</td><td>STEALTHWAR</td><td>LEVEL 8</td></tr>
+<tr><td>DEATHRULER</td><td>DUNERUNNER</td><td>POWERCRUSH</td><td>LEVEL 9</td></tr>
+</table>
+</div>
+<p>
+<div class="title" >Technical info:</div>
+<p>
+<pre>
+<span class="offset">Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F</span>
+<span class="offset">00004290</span>                                         4B 45 54  <span class="ascii">             KET</span>
+<span class="offset">000042A0</span>  4E 41 4D 4C 47 00 52 52 4F 4D 42 45 55 55 00 49  <span class="ascii">NAMLG.RROMBEUU.I</span>
+<span class="offset">000042B0</span>  54 4D 41 4C 47 4E 4C 00 53 56 4C 52 4F 41 4B 41  <span class="ascii">TMALGNL.SVLROAKA</span>
+<span class="offset">000042C0</span>  00 5A 49 55 4A 4B 43 48 54 00 54 5A 4B 41 49 53  <span class="ascii">.ZIUJKCHT.TZKAIS</span>
+<span class="offset">000042D0</span>  41 4F 00 41 45 45 42 49 41 4A 4C 00 54 53 41 4F  <span class="ascii">AO.AEEBIAJL.TSAO</span>
+<span class="offset">000042E0</span>  54 54 43 59 00 49 41 4C 4B 54 41 49 41 00 53 5A  <span class="ascii">TTCY.IALKTAIA.SZ</span>
+<span class="offset">000042F0</span>  41 49 4E 42 48 4E 00 5A 41 44 4D 49 41 4F 4D 00  <span class="ascii">AINBHN.ZADMIAOM.</span>
+<span class="offset">00004300</span>  54 47 41 49 4E 52 4B 49 00 41 59 52 4E 43 44 49  <span class="ascii">TGAINRKI.AYRNCDI</span>
+<span class="offset">00004310</span>  4E 00 47 41 54 54 53 56 54 54 00 59 42 46 43 45  <span class="ascii">N.GATTSVTT.YBFCE</span>
+<span class="offset">00004320</span>  41 55 41 00 41 45 4F 49 4C 4E 4E 56 00 47 4D 4C  <span class="ascii">AUA.AEOILNNV.GML</span>
+<span class="offset">00004330</span>  43 41 4D 4F 41 00 59 55 59 55 53 49 48 44 00 41  <span class="ascii">CAMOA.YUYUSIHD.A</span>
+<span class="offset">00004340</span>  54 54 53 56 4E 41 4E 00 4D 41 4F 54 41 41 4E 59  <span class="ascii">TTSVNAN.MAOTAANY</span>
+<span class="offset">00004350</span>  00 52 45 56 4F 45 4D 41 47                       <span class="ascii">.REVOEMAG</span>
+</pre>
+</body>
+</html>

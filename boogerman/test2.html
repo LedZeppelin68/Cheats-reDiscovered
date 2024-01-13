@@ -1,0 +1,54 @@
+<html>
+<head>
+
+<script type="text/javascript">
+function play()
+{
+const audioContext = new AudioContext();
+
+// Select the Audio Element from the DOM
+const htmlAudioElement = document.getElementById("audio");
+// Create an "Audio Node" from the Audio Element
+const source = audioContext.createMediaElementSource(htmlAudioElement);
+// Connect the Audio Node to your speakers. Now that the audio lives in the
+// Audio Context, you have to explicitly connect it to the speakers in order to
+// hear it
+
+var gainNode = audioContext.createGain();
+
+source.connect(gainNode);
+
+gainNode.connect(audioContext.destination);
+
+}
+</script>
+
+<style>
+body {
+	background-image: url("back2.png");
+	background-color: #000024;
+	animation: animatedBackground 2s linear infinite;
+	background-size: 336px;
+}
+
+@keyframes animatedBackground {
+	0% { background-position: 0 0; }
+	100% { background-position: -336px 0; }
+}
+</style>
+
+</head>
+
+<body>
+<audio
+  controls
+  loop
+  crossorigin="anonymous"
+  id="audio"
+  src="Password.mp3"
+></audio>
+
+<input type="button" onclick="play()" >
+
+</body>
+</html>

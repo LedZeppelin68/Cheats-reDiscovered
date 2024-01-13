@@ -1,0 +1,44 @@
+<script>
+
+function gen()
+{
+      var param1 = 1; //local_40[2] & 0x1f; // BIKER
+      var param2 = 5; //local_40[1] & 0xf; //LEVEL
+      var param3 = 1; //local_40[3] >> 2 & 3; //DIFFICULTY
+      var param4 = 9; //local_40[2] >> 5 | ((local_40[3] & 3) << 3); //BIKES
+      var param5 = 8; //local_40[1] >> 4; //CRYSTALS
+      var param6 = 7; //local_40[3] >> 4; //GOLDBARS
+	  
+	  //var bits24 = 0xffffffff000000;
+	  
+	  var bits24 = (param2 & 0xf) | ((param5 & 0xf) << 4) | ((param1 & 0x1f) << 8) | ((param4 & 0x1f) << 13) | ((param3 & 3) << 18) | ((param6 & 0xf) << 20);
+	  
+	  var checksum = 0;
+	  
+	  for (var i = 0; i < 3; i++)
+	  {
+			checksum += (bits24 >> i * 8) & 0xff;
+	  }
+
+	  var bits40 = (checksum & 0xff) + (bits24 << 8) + ((checksum & 0xff) * 0x100000000);
+	  
+	  //const password = Array(8);
+	  
+	  const pre = Array(5);
+	  var five = 0;
+	  
+	  for (var i = 0; i < 8; i++)
+	  {
+		var q = (bits40 >> i * 5) & 0x1f;
+		
+		q = q << (11 - (five & 3));
+		
+		pre[five >> 3] = q >> 8;
+		pre[(five >> 3) + 1] = q & 0xff;
+		
+		five += 5;
+	  }
+}
+
+</script>
+<body onload="gen()" />

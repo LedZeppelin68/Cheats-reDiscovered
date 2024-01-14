@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zero Tolerance</title>
+    <script src="zero_tolerance.js"></script>
+</head>
+<body onload="generate_password()">
+<b>Zero Tolerance</b>
+<div>
+в игру встроены 3 пароля:
+
+<table>
+    <tr>
+        <td>уточнить</td>
+        <td>Highrise!</td>
+    </tr>
+    <tr>
+        <td>уточнить</td>
+        <td>Basement!</td>
+    </tr>
+    <tr>
+        <td>уточнить</td>
+        <td>Boxing!!!</td>
+    </tr>
+</table>
+</div>
+<table>
+    <tr>
+        <td>
+            <label for="characters">Выбор персонажей</label>
+        </td>
+        <td>
+            <fieldset id="characters">
+                <legend>Characters</legend>
+                <div>
+                    <input type="checkbox" id="character0" checked />
+                    <label for="character0">SATOE ISHII, CODE: "Soba"</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="character1" checked />
+                    <label for="character1">SCOTT HAILE, CODE: "Psycho"</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="character2" checked />
+                    <label for="character2">JUSTIN WOLF, CODE: "JJWolf"</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="character3" checked />
+                    <label for="character3">TONY RAMOS, CODE: "Weasel"</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="character4" checked />
+                    <label for="character4">THOMAS GJOERUP, CODE: "Basse"</label>
+                </div>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="items">Выбор предметов</label>
+        </td>
+        <td>
+            <fieldset id="items">
+                <legend>Items</legend>
+                <div>
+                    <input type="checkbox" id="item0" />
+                    <label for="item0">BIO SCANNER</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item1" />
+                    <label for="item1">MINE</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item2" />
+                    <label for="item2">BULLET PROOF VEST</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item3" />
+                    <label for="item3">FIRE EXTIN-GUISHER</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item4" />
+                    <label for="item4">FIRE PROOF SUIT</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item5" />
+                    <label for="item5">FLASH LIGHT</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item6" />
+                    <label for="item6">HAND GRENADE</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item7" />
+                    <label for="item7">HANDGUN</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item8" />
+                    <label for="item8">NIGHT VISION</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item9" />
+                    <label for="item9">LASER AIMED GUN</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item10" />
+                    <label for="item10">ROCKET LAUNCHER</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item11" />
+                    <label for="item11">SHOTGUN</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item12" />
+                    <label for="item12">FLAME THROWER</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="item13" />
+                    <label for="item13">PULSE LASER</label>
+                </div>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="level">Выбор уровня</label>
+        </td>
+        <td>
+            <select onchange="generate_password()" id="level">
+                <option value="0">DOCKING BAY 2</option>
+                <option value="1">BRIDGE 1</option>
+                <option value="2">ENGINEERING 1</option>
+                <option value="3">ENGINEERING 2</option>
+                <option value="4">ENGINEERING 3</option>
+                <option value="5">ENGINEERING 4</option>
+                <option value="6">GREENHOUSE 1</option>
+                <option value="7">GREENHOUSE 2</option>
+                <option value="8">GREENHOUSE 3</option>
+                <option value="9">BRIDGE 2</option>
+                <option value="10">REACTOR 1</option>
+                <option value="11">REACTOR 2</option>
+                <option value="12">REACTOR 2</option>
+                <option value="13">REACTOR 2</option>
+                <option value="14">REACTOR 2</option>
+                <option value="15">ROOF TOP</option>
+                <option value="16">FLOOR 164</option>
+                <option value="17">FLOOR 163</option>
+                <option value="18">FLOOR 162</option>
+                <option value="19">FLOOR 161</option>
+                <option value="20">FLOOR 160</option>
+                <option value="21">FLOOR 159</option>
+                <option value="22">FLOOR 158</option>
+                <option value="23">FLOOR 157</option>
+                <option value="24">FLOOR 156</option>
+                <option value="25">FLOOR 155</option>
+                <option value="26">FLOOR 154</option>
+                <option value="27">FLOOR 153</option>
+                <option value="28">FLOOR 152</option>
+                <option value="29">FLOOR 151</option>
+                <option value="30">FLOOR 150</option>
+                <option value="31">BASEMENT 1</option>
+                <option value="32">BASEMENT 2</option>
+                <option value="33">BASEMENT 3</option>
+                <option value="34">BASEMENT 4</option>
+                <option value="35">BASEMENT 5</option>
+                <option value="36">BASEMENT 6</option>
+                <option value="37">BASEMENT 7</option>
+                <option value="38">BASEMENT 8</option>
+                <option value="39">BASEMENT 9</option>
+                <option value="40">BASEMENT 10</option>
+                <option value="41">BASEMENT 11</option>
+                <option value="42">BASEMENT 12</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="password">Пароль</label>
+        </td>
+        <td>
+            <input type="text" id="password" />
+        </td>
+    </tr>
+</table>    
+<hr>
+<b>Как работает генератор?</b>
+<pre>
+Пароль состоит из 9-ти символов из набора <b>ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789?)!/-*</b>
+
+Данные пароля используют 54 бита, 7 байт, 46 бит (с 0 по 45) под игровые данные и 8 бит (с 46 по 53) - контрольная сумма, как распределяются данные показано на рисунке
+46 бита бьются на группки по 8 бит т.е. на 6 байт, эти 6 байт складываются, из полученной суммы всё, что выше 8 бита отбрасывается, оставшиеся 8 бит это контрольная сумма, она записывается с 46 по 53 бит
+Далее, все 56 бит перемешиваются по таблице, на рисунке показано цветными линиями, 0 бит становится 46, 1 бит становится 40 и так далее
+На полученных 7-ми байтах выполняется XOR операция, полученные 54 бита делятся на группки по 6 бит, 9 байт
+По этим 9-и байтам выбираются буквы из набора <b>xB?DEjGH)JKLMNOPRSTUVQWXYZabefcdhigFk!mnopqrstuvwyAz27453968C/-*</b>
+</pre>
+<img src="zero_tolerance.svg">
+</body>
+</html>

@@ -3,41 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <title>Zombies Ate My Neighbors</title>
+	<script src="zombies_ate_my_neighbors.js"></script>
 </head>
-<body>
-<script src="zombies_ate_my_neighbors.js"></script>
+<body onload="generate_password()">
+<b>Zombies Ate My Neighbors</b>
 
+<table>
+	<tr>
+		<td>
+			<label for="level">Выбор уровня</label>
+		</td>
+		<td>
+			<select onchange="generate_password()" id="level">
+				<option value="0">Level 5: Weird Kids on the Block</option>
+				<option value="1">Level 9: Toxic Terrors</option>
+				<option value="2">Level 13: Chopping Mall</option>
+				<option value="3">Level 17: Office of the Doomed</option>
+				<option value="4">Level 21: The Day the Earth Ran Away</option>
+				<option value="5">Level 25: Look Whos Shopping</option>
+				<option value="6">Level 29: Zombie House Party</option>
+				<option value="7">Level 33: Fish and Crypts</option>
+				<option value="8">Level 37: Labyrinth of Horrors</option>
+				<option value="9">Level 41: Martians Go Home!</option>
+				<option value="10">Level 45: Danger in Picnic Park</option>
+				<option value="11">Credit Level: Monsters Among Us</option>
+				<option value="12">Bonus Level: Curse of the Pharaohs</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="victims">Количество жертв</label>
+		</td>
+		<td>
+			<select onchange="generate_password()" id="victims">
+				<option value="0">1</option>
+				<option value="1">2</option>
+				<option value="2">3</option>
+				<option value="3">4</option>
+				<option value="4">5</option>
+				<option value="5">6</option>
+				<option value="6">7</option>
+				<option value="7">8</option>
+				<option value="8">9</option>
+				<option value="9">10</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="password">Пароль</label>
+		</td>
+		<td>
+			<input type="text" id="password" />
+		</td>
+	</tr>
+</table>
+<div>
+	генератор подходит для:
+
+	<table>
+		<tr>
+			<td>Zombies</td>
+			<td>E</td>
+			<td>T-95086</td>
+			<td>179a1aa2</td>
+		</tr>
+		<tr>
+			<td>Zombies Ate My Neighbors</td>
+			<td>U</td>
+			<td>T-95086</td>
+			<td>2bf3626f</td>
+		</tr>
+	</table>
+</div>
+<hr>
+<b>Как работает генератор?</b>
 <pre>
-<select onchange="generate_password()" id="level">
-	<option value="0">Level 5: Weird Kids on the Block</option>
-	<option value="1">Level 9: Toxic Terrors</option>
-	<option value="2">Level 13: Chopping Mall</option>
-	<option value="3">Level 17: Office of the Doomed</option>
-	<option value="4">Level 21: The Day the Earth Ran Away</option>
-	<option value="5">Level 25: Look Whos Shopping</option>
-	<option value="6">Level 29: Zombie House Party</option>
-	<option value="7">Level 33: Fish and Crypts</option>
-	<option value="8">Level 37: Labyrinth of Horrors</option>
-	<option value="9">Level 41: Martians Go Home!</option>
-	<option value="10">Level 45: Danger in Picnic Park</option>
-	<option value="11">Credit Level: Monsters Among Us</option>
-	<option value="12">Bonus Level: Curse of the Pharaohs</option>
-</select>
+Пароль состоит из 4-х символов набора <b>0123456789BCDFGHJKLMNPQRSTVWXYZ_!</b>
+Паролем можно попасть на каждый четвёртый уровень, начиная с 5-го
 
-<select onchange="generate_password()" id="victims">
-	<option value="0">1</option>
-	<option value="1">2</option>
-	<option value="2">3</option>
-	<option value="3">4</option>
-	<option value="4">5</option>
-	<option value="5">6</option>
-	<option value="6">7</option>
-	<option value="7">8</option>
-	<option value="8">9</option>
-	<option value="9">10</option>
-</select>
+0: Level 5: Weird Kids on the Block
+1: Level 9: Toxic Terrors
+2: Level 13: Chopping Mall
+3: Level 17: Office of the Doomed
+4: Level 21: The Day the Earth Ran Away
+5: Level 25: Look Whos Shopping
+6: Level 29: Zombie House Party
+7: Level 33: Fish and Crypts
+8: Level 37: Labyrinth of Horrors
+9: Level 41: Martians Go Home!
+10: Level 45: Danger in Picnic Park
+11: Credit Level: Monsters Among Us
+12: Bonus Level: Curse of the Pharaohs
 
-<input type="text" id="password" />
+Например, надо попасть на 29-ий уровень, 29-ому уровню соответствует цифра 6
+По таблице LEVEL выбирается пара 6 - 0x09 и 0x0С (9 и 12)
+По таблице VICTIMS выбирается, сколько ЖЕРТВ надо спасти, чем меньше ЖЕРТВ, тем быстрее можно завершить уровень
+Например, 1 жертва, выбирается пара 0 - 0x04 и 0x07 (4 и 7)
+По таблице CORRECTION выбирается пара 6, по цифре уровня - 2 и 1
+к 4 прибавляется 2, получается 6, к 7 прибавляется 1, получается 8, таким образом получаются две пары чисел:
+9 и 12, 6 и 8
+первая цифра второй пары: 6 это первая буква пароля
+вторая цифра первой пары: 12 это вторая буква пароля
+первая цифра первой пары: 9 это третья буква пароля
+вторая цифра второй пары: 8 это четвёртая буква пароля
+6, 12, 9, 8
+буквы выбираются по набору <b>YGFVSBQMRKJXNCPTZLDWH</b> индекс отсчитывается с 0
+Q, N, K, R
+</pre>
+<div>
+	<img src="zombies_ate_my_neighbors.svg">
+</div>
+<b>Zombies (E)</b>
+<pre>
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+000280B0                                00 10 00 00 00 08            ......
+000280C0  00 05 00 02 00 0D 00 11 00 07 00 05 00 06 00 0C  ................
+000280D0  00 11 00 09 00 0C 00 14 00 12 00 03 00 09 00 0E  ................
+000280E0  00 10 00 00 00 0C 00 12 00 04 00 0F 00 0B        ..............
+</pre>
+<pre>
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+000280E0                                            00 04                ..
+000280F0  00 07 00 0F 00 0A 00 0C 00 12 00 10 00 09 00 0E  ................
+00028100  00 10 00 03 00 05 00 0D 00 08 00 08 00 0C 00 0A  ................
+00028110  00 0E 00 06 00 11                                ......
+</pre>
+<pre>
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00028110                    59 47 46 56 53 42 51 4D 52 4B        YGFVSBQMRK
+00028120  4A 58 4E 43 50 54 5A 4C 44 57 48                 JXNCPTZLDWH
+</pre>
+<pre>
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00028120                                      00 00 FF FE              ..яю
+00028130  FF FE FF FF 00 02 00 00 00 01 00 02 FF FF FF FE  яюяя........яяяю
+00028140  00 02 00 02 00 02 00 01 00 00 00 00 00 01 00 01  ................
+00028150  00 01 00 00 FF FF FF FF 00 00 FF FF 00 00 00 01  ....яяяя..яя....
+</pre>
+<b>Zombies Ate My Neighbors (U)</b>
+<pre>
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+000280B0                                            00 10                ..
+000280C0  00 00 00 08 00 05 00 02 00 0D 00 11 00 07 00 05  ................
+000280D0  00 06 00 0C 00 11 00 09 00 0C 00 14 00 12 00 03  ................
+000280E0  00 09 00 0E 00 10 00 00 00 0C 00 12 00 04 00 0F  ................
+000280F0  00 0B                                            ..
+</pre>
+<pre>
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+000280F0        00 04 00 07 00 0F 00 0A 00 0C 00 12 00 10    ..............
+00028100  00 09 00 0E 00 10 00 03 00 05 00 0D 00 08 00 08  ................
+00028110  00 0C 00 0A 00 0E 00 06 00 11                    ..........
+</pre>
+<pre>
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00028110                                59 47 46 56 53 42            YGFVSB
+00028120  51 4D 52 4B 4A 58 4E 43 50 54 5A 4C 44 57 48     QMRKJXNCPTZLDWH
+</pre>
+<pre>
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00028130  00 00 FF FE FF FE FF FF 00 02 00 00 00 01 00 02  ..яюяюяя........
+00028140  FF FF FF FE 00 02 00 02 00 02 00 01 00 00 00 00  яяяю............
+00028150  00 01 00 01 00 01 00 00 FF FF FF FF 00 00 FF FF  ........яяяя..яя
+00028160  00 00 00 01                                      ....
 </pre>
 </body>
 </html>

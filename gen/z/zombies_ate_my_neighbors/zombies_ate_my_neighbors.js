@@ -1,4 +1,4 @@
-function zombies_genpass()
+function generate_password()
 {
 	let data_level = [
 		[0x10, 0x00],
@@ -45,17 +45,17 @@ function zombies_genpass()
 		[ 0, -1],
 		[ 0,  1]
 	];
-	
-	var level = document.getElementById("zombies_1").value;
-	var victims = document.getElementById("zombies_2").value;
-	
-	var password = "";
+
+	let level = document.getElementById("level").value;
+	let victims = document.getElementById("victims").value;
+
+	let password = "";
 
 	password += alphabet[data_victims[victims][0] + data_relative_to_level[level][0]];
 	password += alphabet[data_level[level][1]];
 	password += alphabet[data_level[level][0]];
 	password += alphabet[data_victims[victims][1] + data_relative_to_level[level][1]];
 
-	var text = document.getElementById("zombies_3");
+	let text = document.getElementById("password");
 	text.value = password;
 }

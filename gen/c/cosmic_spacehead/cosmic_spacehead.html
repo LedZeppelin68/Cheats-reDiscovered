@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosmic Spacehead</title>
+</head>
+<body>
+<pre>
+в игре 6 комбинации, вводятся на заставке с Космоголовым
+<img src="cosmic_spacehead.png">
+<table>
+	<tr>
+		<td>???</td>
+		<td>A B C A B C</td>
+	</tr>
+    <tr>
+		<td>???</td>
+		<td>A B C A B C B C A</td>
+	</tr>
+    <tr>
+		<td>???</td>
+		<td>A B C A</td>
+	</tr>
+    <tr>
+		<td>???</td>
+		<td>A B C A B C B</td>
+	</tr>
+        <tr>
+		<td>???</td>
+		<td>A B C A B C B C A C A B</td>
+	</tr>
+        <tr>
+		<td>???</td>
+		<td>A B C A B C B C A C A</td>
+	</tr>
+</table>
+</pre>
+<hr>
+<pre>
+        00000428 10 39 ff        move.b     (DAT_ffffb208).l,D0b                             = ??
+                 ff b2 08
+        0000042e b0 3c 00 06     cmp.b      #0x6,D0b
+        00000432 66 08           bne.b      LAB_0000043c
+        00000434 4e b9 00        jsr        FUN_00000536.l                                   undefined FUN_00000536(void)
+                 00 05 36                                                                    = ??
+        0000043a 60 d6           bra.b      LAB_00000412
+                             LAB_0000043c                                    XREF[1]:     00000432(j)
+        0000043c b0 3c 00 09     cmp.b      #0x9,D0b
+        00000440 66 08           bne.b      LAB_0000044a
+        00000442 4e b9 00        jsr        FUN_0001a4bc.l                                   undefined FUN_0001a4bc(void)
+                 01 a4 bc                                                                    = ??
+        00000448 60 c8           bra.b      LAB_00000412
+                             LAB_0000044a                                    XREF[1]:     00000440(j)
+        0000044a b0 3c 00 04     cmp.b      #0x4,D0b
+        0000044e 66 08           bne.b      LAB_00000458
+        00000450 4e b9 00        jsr        FUN_000196e8.l                                   undefined FUN_000196e8(void)
+                 01 96 e8                                                                    = ??
+        00000456 60 ba           bra.b      LAB_00000412
+                             LAB_00000458                                    XREF[1]:     0000044e(j)
+        00000458 b0 3c 00 07     cmp.b      #0x7,D0b
+        0000045c 66 08           bne.b      LAB_00000466
+        0000045e 4e b9 00        jsr        FUN_000021e6.l                                   undefined FUN_000021e6(void)
+                 00 21 e6                                                                    = ??
+        00000464 60 ac           bra.b      LAB_00000412
+                             LAB_00000466                                    XREF[1]:     0000045c(j)
+        00000466 b0 3c 00 0c     cmp.b      #0xc,D0b
+        0000046a 66 48           bne.b      LAB_000004b4
+        0000046c 4e b9 00        jsr        FUN_0001871a.l                                   undefined FUN_0001871a(void)
+                 01 87 1a                                                                    = ??
+        00000472 4e b9 00        jsr        FUN_000115ee.l                                   char FUN_000115ee(void)
+                 01 15 ee                                                                    = ??
+        00000478 41 f9 ff        lea        (DAT_ffffb05b).l,A0                              = ??
+                 ff b0 5b
+        0000047e 3e 3c 00 1a     move.w     #0x1a,D7w
+                             LAB_00000482                                    XREF[1]:     00000486(j)
+        00000482 10 fc 00 01     move.b     #0x1,(A0)+=>DAT_ffffb05b                         = ??
+        00000486 51 cf ff fa     dbf        D7w,LAB_00000482
+        0000048a 42 39 ff        clr.b      (DAT_ffffb1ea).l                                 = ??
+                 ff b1 ea
+        00000490 61 00 09 0a     bsr.w      FUN_00000d9c                                     undefined FUN_00000d9c(void)
+                                                                                             = ??
+        00000494 10 39 ff        move.b     (DAT_ffffab0c).l,D0b                             = ??
+                 ff ab 0c
+        0000049a b0 3c 00 72     cmp.b      #0x72,D0b
+        0000049e 67 00 00 3c     beq.w      LAB_000004dc
+        000004a2 13 fc 00        move.b     #0x4,(DAT_ffffb1d9).l                            = ??
+                 04 ff ff
+                 b1 d9
+        000004aa 4e b9 00        jsr        FUN_00005766.l                                   undefined FUN_00005766(void)
+                 00 57 66                                                                    = ??
+        000004b0 60 00 ff 60     bra.w      LAB_00000412
+                             LAB_000004b4                                    XREF[1]:     0000046a(j)
+        000004b4 b0 3c 00 0b     cmp.b      #0xb,D0b
+        000004b8 66 0a           bne.b      LAB_000004c4
+        000004ba 4e b9 00        jsr        FUN_0001173c.l                                   uint FUN_0001173c(void)
+                 01 17 3c                                                                    = ??
+        000004c0 60 00 ff 50     bra.w      LAB_00000412
+</pre>
+<pre>
+        00001ea2 10 39 ff        move.b     (DAT_ffffb208).l,D0b                             = ??
+                 ff b2 08
+        00001ea8 67 00 00 ba     beq.w      LAB_00001f64
+        00001eac b0 3c 00 01     cmp.b      #0x1,D0b
+        00001eb0 67 00 00 72     beq.w      LAB_00001f24
+        00001eb4 b0 3c 00 02     cmp.b      #0x2,D0b
+        00001eb8 67 00 00 8a     beq.w      LAB_00001f44
+        00001ebc b0 3c 00 03     cmp.b      #0x3,D0b
+        00001ec0 67 00 00 a2     beq.w      LAB_00001f64
+        00001ec4 b0 3c 00 04     cmp.b      #0x4,D0b
+        00001ec8 67 00 00 5a     beq.w      LAB_00001f24
+        00001ecc b0 3c 00 05     cmp.b      #0x5,D0b
+        00001ed0 67 00 00 72     beq.w      LAB_00001f44
+        00001ed4 b0 3c 00 06     cmp.b      #0x6,D0b
+        00001ed8 67 00 00 4a     beq.w      LAB_00001f24
+        00001edc b0 3c 00 07     cmp.b      #0x7,D0b
+        00001ee0 67 00 00 62     beq.w      LAB_00001f44
+        00001ee4 b0 3c 00 08     cmp.b      #0x8,D0b
+        00001ee8 67 00 00 7a     beq.w      LAB_00001f64
+        00001eec b0 3c 00 09     cmp.b      #0x9,D0b
+        00001ef0 67 00 00 52     beq.w      LAB_00001f44
+        00001ef4 b0 3c 00 0a     cmp.b      #0xa,D0b
+        00001ef8 67 00 00 6a     beq.w      LAB_00001f64
+        00001efc b0 3c 00 0b     cmp.b      #0xb,D0b
+        00001f00 67 00 00 22     beq.w      LAB_00001f24
+        00001f04 b0 3c 00 0c     cmp.b      #0xc,D0b
+        00001f08 66 00 00 88     bne.w      LAB_00001f92
+        00001f0c 10 39 ff        move.b     (DAT_ffffb1be).l,D0b                             = ??
+                 ff b1 be
+        00001f12 67 00 00 8a     beq.w      LAB_00001f9e
+        00001f16 b0 39 ff        cmp.b      (DAT_ffffb209).l,D0b                             = ??
+                 ff b2 09
+        00001f1c 67 00 00 80     beq.w      LAB_00001f9e
+        00001f20 66 00 00 70     bne.w      LAB_00001f92
+                             LAB_00001f24                                    XREF[4]:     00001eb0(j), 00001ec8(j),
+                                                                                          00001ed8(j), 00001f00(j)
+        00001f24 10 39 ff        move.b     (DAT_ffffb1be).l,D0b                             = ??
+                 ff b1 be
+        00001f2a 67 00 00 72     beq.w      LAB_00001f9e
+        00001f2e b0 39 ff        cmp.b      (DAT_ffffb209).l,D0b                             = ??
+                 ff b2 09
+        00001f34 67 00 00 68     beq.w      LAB_00001f9e
+        00001f38 02 00 00 10     andi.b     #0x10,D0b
+        00001f3c 66 00 00 42     bne.w      LAB_00001f80
+        00001f40 60 00 00 50     bra.w      LAB_00001f92
+                             LAB_00001f44                                    XREF[4]:     00001eb8(j), 00001ed0(j),
+                                                                                          00001ee0(j), 00001ef0(j)
+        00001f44 10 39 ff        move.b     (DAT_ffffb1be).l,D0b                             = ??
+                 ff b1 be
+        00001f4a 67 00 00 52     beq.w      LAB_00001f9e
+        00001f4e b0 39 ff        cmp.b      (DAT_ffffb209).l,D0b                             = ??
+                 ff b2 09
+        00001f54 67 00 00 48     beq.w      LAB_00001f9e
+        00001f58 02 00 00 20     andi.b     #0x20,D0b
+        00001f5c 66 00 00 22     bne.w      LAB_00001f80
+        00001f60 60 00 00 30     bra.w      LAB_00001f92
+                             LAB_00001f64                                    XREF[4]:     00001ea8(j), 00001ec0(j),
+                                                                                          00001ee8(j), 00001ef8(j)
+        00001f64 10 39 ff        move.b     (DAT_ffffb1be).l,D0b                             = ??
+                 ff b1 be
+        00001f6a 67 00 00 32     beq.w      LAB_00001f9e
+        00001f6e b0 39 ff        cmp.b      (DAT_ffffb209).l,D0b                             = ??
+                 ff b2 09
+        00001f74 67 00 00 28     beq.w      LAB_00001f9e
+        00001f78 02 00 00 40     andi.b     #0x40,D0b
+        00001f7c 66 02           bne.b      LAB_00001f80
+        00001f7e 60 12           bra.b      LAB_00001f92
+</pre>
+</body>
+</html>

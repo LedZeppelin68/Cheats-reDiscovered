@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comix Zone</title>
+</head>
+<body>
+<pre>
+в игре 2 комбинации, вводятся в Jukebox, стрелками выбираются номера треков и нажимается кнопка C
+<table>
+    <tr>
+        <td>бессмертие</td>
+        <td>3 12 17 2 2 10 2 7 7 11</td>
+    </tr>
+    <tr>
+        <td>выбо уровня, навести на номер трека от 1 по 6 и нажать кнопку C</td>
+        <td>14 15 18 5 13 1 3 18 15 6</td>
+    </tr>
+</table>
+
+в меню OPTIONS, если зажать A+B+C монжо посмотреть титры
+</pre>
+<hr>
+<pre>
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+0006EAF0                    03 0C 11 02 02 0A 02 07 07 0B        ..........
+0006EB00  00 0E 0F 12 05 0D 01 03 12 0F 06                 ...........
+</pre>
+<pre>
+        001ce684 34 3c 00 70     move.w     #0x70,D2w
+        001ce688 36 02           move.w     D2w,D3w
+        001ce68a c4 40           and.w      D0w,D2w
+        001ce68c b6 42           cmp.w      D2w,D3w
+        001ce68e 66 04           bne.b      LAB_001ce694
+        001ce690 70 01           moveq      #0x1,D0
+        001ce692 4e 75           rts
+</pre>
+</body>
+</html>

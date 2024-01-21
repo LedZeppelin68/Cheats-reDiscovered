@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jurassic Park</title>
+    <script src="jurassic_park.js"></script>
+</head>
+<body onload="generate_password()">
+<table>
+    <tr>
+        <td>
+            <label for="level">Уровень</label>
+        </td>
+        <td>
+            <select onchange="generate_password()" id="level">
+                <option value="0">Grant - level 1</option>
+                <option value="1">Grant - level 2</option>
+                <option value="2">Grant - level 3</option>
+                <option value="3">Grant - level 4</option>
+                <option value="4">Grant - level 5</option>
+                <option value="5">Grant - level 6</option>
+                <option value="6">Grant - level 7</option>
+                <option value="8">Raptor - level 1</option>
+                <option value="9">Raptor - level 2</option>
+                <option value="10">Raptor - level 3</option>
+                <option value="11">Raptor - level 4</option>
+                <option value="12">Raptor - level 5</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="weapon1">Blue-banded darts</label>
+        </td>
+        <td>
+            <input type="text" onchange="generate_password()" id="weapon1" value="60">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="weapon2">Red-banded super darts</label>
+        </td>
+        <td>
+            <input type="text" onchange="generate_password()" id="weapon2" value="60">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="weapon3">Stun gun</label>
+        </td>
+        <td>
+            <input type="text" onchange="generate_password()" id="weapon3" value="60">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="weapon4">Gas grenades</label>
+        </td>
+        <td>
+            <input type="text" onchange="generate_password()" id="weapon4" value="60">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="weapon5">Flash grenades</label>
+        </td>
+        <td>
+            <input type="text" onchange="generate_password()" id="weapon5" value="60">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="weapon6">Rockets</label>
+        </td>
+        <td>
+            <input type="text" onchange="generate_password()" id="weapon6" value="60">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="weapon7">Concussion grenades</label>
+        </td>
+        <td>
+            <input type="text" onchange="generate_password()" id="weapon7" value="60">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="difficulty">Difficulty</label>
+        </td>
+        <td>
+            <select onchange="generate_password()" id="difficulty">
+                <option value="1">Easy</option>
+                <option value="2">Normal</option>
+                <option value="3">Hard</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="password">Password</label>
+        </td>
+        <td>
+            <input type="text" id="password">
+        </td>
+    </tr>
+</table>
+<pre>
+в игру встроены следующие пароли:
+
+FREIHEIT
+BLUESKY1
+NYUKNYUK
+JPG01ARK
+JPG02ARK
+JPG03ARK
+JPG04ARK
+JPG05ARK
+JPG06ARK
+JPR01ARK
+JPR02ARK
+JPR03ARK
+JPR04ARK
+JPG07ARK
+JPR05ARK
+</pre>
+<hr>
+<pre>
+Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+
+00007200                                      46 52 45 49              FREI
+00007210  48 45 49 54 00 00 72 C4 42 4C 55 45 53 4B 59 31  HEIT..rДBLUESKY1
+00007220  00 00 72 C4 4E 59 55 4B 4E 59 55 4B 00 00 72 E0  ..rДNYUKNYUK..rа
+00007230  4A 50 47 30 31 41 52 4B 00 00 73 A0 4A 50 47 30  JPG01ARK..s JPG0
+00007240  32 41 52 4B 00 00 73 AA 4A 50 47 30 33 41 52 4B  2ARK..sЄJPG03ARK
+00007250  00 00 73 B4 4A 50 47 30 34 41 52 4B 00 00 73 BE  ..sґJPG04ARK..sѕ
+00007260  4A 50 47 30 35 41 52 4B 00 00 73 C8 4A 50 47 30  JPG05ARK..sИJPG0
+00007270  36 41 52 4B 00 00 73 D2 4A 50 52 30 31 41 52 4B  6ARK..sТJPR01ARK
+00007280  00 00 73 FC 4A 50 52 30 32 41 52 4B 00 00 74 06  ..sьJPR02ARK..t.
+00007290  4A 50 52 30 33 41 52 4B 00 00 74 10 4A 50 52 30  JPR03ARK..t.JPR0
+000072A0  34 41 52 4B 00 00 74 1A 4A 50 47 30 37 41 52 4B  4ARK..t.JPG07ARK
+000072B0  00 00 74 2C 4A 50 52 30 35 41 52 4B              ..t,JPR05ARK
+</pre>
+</body>
+</html>

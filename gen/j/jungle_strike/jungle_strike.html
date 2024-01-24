@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jungle Strike</title>
+    <script src="jungle_strike.js"></script>
+</head>
+<body onload="generate_password()">
+<table>
+    <tr>
+        <td>
+            level
+        </td>
+        <td>
+            <select onchange="generate_password()" id="level">
+                <option value="0">Campaign 1: WASHINGTON DC</option>
+                <option value="1">Campaign 2: SUB ATTACK</option>
+                <option value="2">Campaign 3: TRAINING GROUND</option>
+                <option value="3">Campaign 4: NIGHT STRIKE</option>
+                <option value="4">Campaign 5: PULOSO CITY</option>
+                <option value="5">Campaign 6: SNOW FORTRESS</option>
+                <option value="6">Campaign 7: RIVER RAID</option>
+                <option value="7">Campaign 8: MOUNTAINS</option>
+                <option value="8">Campaign 9: RETURN HOME</option>
+                <option value="9">Campaign 10: WIN SCREEN</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="score">Score</label>
+        </td>
+        <td>
+            <input onchange="generate_password()" type="text" id="score" value="12345">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="copilot">Copilot</label>
+        </td>
+        <td>
+            <fieldset id="copilot">
+                <div>
+                    <input onchange="generate_password()" type="checkbox" id="copilot01"/>
+                    <label for="copilot01">MIKE SIERRA: MR. 3-D</label>
+                </div>
+                <div>
+                    <input onchange="generate_password()" type="checkbox" id="copilot02"/>
+                    <label for="copilot02">SCOTT ANTONIO: EGO</label>
+                </div>
+                <div>
+                    <input onchange="generate_password()" type="checkbox" id="copilot04"/>
+                    <label for="copilot04">GRANT FOSTER: FACEMAN</label>
+                </div>
+                <div>
+                    <input onchange="generate_password()" type="checkbox" id="copilot08"/>
+                    <label for="copilot08">ROSALIND D: ANNIHILATOR</label>
+                </div>
+                <div>
+                    <input onchange="generate_password()" type="checkbox" id="copilot10"/>
+                    <label for="copilot10">J.W.FENNEL: WILD BILL</label>
+                </div>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="multiplier">Score multiplier</label>
+        </td>
+        <td>
+            <select onchange="generate_password()" id="multiplier">
+                <option value="0">x1</option>
+                <option value="1">x10</option>
+                <option value="2">x100</option>
+                <option value="3">x1000</option>
+                <option value="4">x10000</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="lives">Lives</label>
+        </td>
+        <td>
+            <input onchange="generate_password()" type="text" id="lives" value="24">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="password">Password</label>
+        </td>
+        <td>
+            <input type="text" id="password">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
